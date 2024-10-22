@@ -37,16 +37,19 @@
     cursor: pointer;
     padding: 5px 10px;
     border-radius: 10px;
-    transition: 0.3s;
+    
 }
 
 .nav-elemnts li a {
+    transition: 0.3s;
     color: white;
     text-decoration: none;
+
 }
 
 .nav-elemnts li:hover{
-    background-color: #299162;
+    /* background-color: #299162; */
+    text-decoration: underline 2px;
 
 }
 
@@ -54,16 +57,24 @@
 .operations {
     display: flex;
     list-style: none;
-    gap: 2rem;
+    gap: 0.80rem;
     align-items: center;
-}
-
-.operations  {
     cursor: pointer;
     font-size:18px;
     font-family: sans-serif;
-    
+
 }
+
+.logo {
+    text-decoration: none;
+    color: #073922;
+    font-size: 2rem;
+    font-weight: bold;
+    border: #073922 solid 5px ;
+    padding: 3px 10px;
+    border-radius: 13px 13px  13px 0px;
+}
+
 
 .operations * {
     padding: 5px 10px;
@@ -82,10 +93,6 @@
     background-color : #38CB89;
 }
 
-.hide {
-    display: none;
-}
-
 #searchbook{
     height: 2.4rem;
     width: 40rem;
@@ -99,4 +106,68 @@
     outline: none; /* Removes default browser outline */
     border-color:white ;
     
+}
+
+
+nav-elemnts li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #38CB89;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+
+  /* Triggering the animation on hover */
+  a:hover::after {
+    transform: scaleX(1);
+  }
+
+
+  /* Styling the nav elements */
+.nav-elemnts {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-elemnts li {
+    position: relative;
+  }
+  
+  /* Styling the nav links */
+  .nav-elemnts a {
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  /* Creating the underline effect using ::after */
+  .nav-elemnts a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Expanding the underline on hover */
+  .nav-elemnts a:hover::after {
+    transform: scaleX(1);
+  }
+
+  
+
+.hide {
+    display: none;
 }

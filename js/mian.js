@@ -1,6 +1,6 @@
 const searhbutton = document.querySelector('.search-button');
 const searchtxtbox = document.querySelector("#searchbook") ;
-const navbar = document.querySelector(".filter-element") ; 
+const navbar = document.querySelector(".nav-elemnts") ; 
 const filter_fields = document.querySelectorAll(".filter-element") ; 
 
 
@@ -23,4 +23,4 @@ filter_fields.forEach((button) => {
       // Add 'active' class to the clicked button
       button.classList.add('selected');
     });
-  });
+});

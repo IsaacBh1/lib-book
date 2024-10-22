@@ -1,0 +1,56 @@
+.books{
+    display: flex;
+    flex-wrap:wrap;          /* Items wrap to the next row */
+    gap: 20px;                /* Spacing between books */
+    padding: 10px;
+    border: transparent;
+    margin: 10px;         /* Adjust to desired width */
+    overflow: scroll;
+    justify-content: flex-start;
+    height: 79vh;
+    justify-content: center;
+}
+    
+    
+
+
+.book-item {
+    /*flex: 1 1 200px;*/          /* Minimum 200px wide, and can grow */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* max-width: 200px; */
+    width: 15rem;
+    height: 25rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+  }
+  
+  /* Book title styling */
+  .book-title {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  /* Book description styling */
+  .book-description {
+    font-size: 0.9em;
+    color: #555;
+  }
+  
+  /* Hover effect for books */
+  .book-item:hover {
+    transform: scale(1.04);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+
+  .book-image {
+    width: 100%;
+    height: 18rem;
+  }
+  .book-infos {
+    padding: 1rem;
+    overflow: hidden;
+  }
