@@ -26,6 +26,7 @@
     justify-content: space-between;
     gap: 5rem;
     justify-items: center;  
+    transition: 3s;
 }
 
 
@@ -34,10 +35,10 @@
     font-size: 1.5rem;
     font-family: sans-serif;
     cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 10px;
     transition: 0.3s;
 }
-
-
 
 .nav-elemnts li a {
     color: white;
@@ -45,7 +46,8 @@
 }
 
 .nav-elemnts li:hover{
-    text-decoration: underline;
+    background-color: #299162;
+
 }
 
 
@@ -66,7 +68,6 @@
 .operations * {
     padding: 5px 10px;
     border-radius: 10px;
-    font-weight:600;
     color: white;
     transition: 0.3s;
 }
@@ -85,6 +86,17 @@
     display: none;
 }
 
-#searchbook {
-    width: 50px;
+#searchbook{
+    height: 2.4rem;
+    width: 40rem;
+    font-size: 18px;
+    border-radius: 30px;
+    padding-left:12px ;
+    border: 2px solid #ccc;
+    color: #0d2c1e;
+}
+#searchbook:focus{
+    outline: none; /* Removes default browser outline */
+    border-color:white ;
+    
 }

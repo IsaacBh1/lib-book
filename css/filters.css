@@ -1,0 +1,22 @@
+.filters-cont {
+    padding: 2rem;
+}
+
+.filters{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.filters li {
+    padding: 5px 10px;
+    border-radius: 30px;
+    color: white;
+    font-size: 1rem ;
+    border: 2px solid #299162;
+    font-family: sans-serif;
+}
+
+.selected {
+    background-color: #299162;
+}

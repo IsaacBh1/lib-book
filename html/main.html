@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./../css/nav.css">
+    <link rel="stylesheet" href="./../css/filters.css">
     <title>Document</title>
 </head>
 <body>
@@ -16,17 +17,25 @@
                 <li><a href="">My Shelf</a></li>
                 <li><a href="">Contact Us</a></li>
             </ul>
+                <input type="text" name="BookSearch" id="searchbook" class="hide">
             <ul class="operations">
                 <li>
                     <img src="./../assets/magnifying-glass.svg" alt="search" class="search-button">
                 </li>
                 <li class="login cls-hv"> LOGIN </li>
                 <li class="signeup cls-hv"> SIGNE UP</li>
-                <!-- <input type="text"> -->
             </ul>
         </nav>
         <div class="body">
-
+            <div class="filters-cont">
+                <ul class="filters">
+                    <li class="selected filter-element">All</li>
+                    <li class="filter-element">Most Liked</li>
+                    <li class="filter-element">most recent</li>
+                    <li class="filter-element">oldest</li>
+                    <li class="filter-element">moset bookmarked</li>
+                </ul>
+            </div>
         </div>
     </div>
     <script src="./../js/mian.js">
