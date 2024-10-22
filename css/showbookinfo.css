@@ -1,0 +1,18 @@
+.bookImgDiv{
+    background-color: rgb(23, 236, 130);
+    float:left;
+    width:25% ;
+}
+#bookImg{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    width: 60%;
+    height: auto;
+}
+.bookInfo{
+    background-color: rgb(23, 236, 225);
+    float:left;
+    height:25% ;
+    width:33% ;
+}
