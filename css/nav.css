@@ -82,6 +82,16 @@
     color: white;
     transition: 0.3s;
 }
+.search-button {
+    border-radius: 5px;
+}
+
+.search-button:hover {
+    background-color: #299162;
+}
+
+
+
 
 .login {
     background-color: #299162;

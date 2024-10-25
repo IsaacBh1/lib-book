@@ -3,22 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./../css/showbookinfo.css">
-    <title>BookInfo</title>
+    <link rel="stylesheet" href="./../css/nav.css">
+    <title>OrioApp</title>
 </head>
 <body>
-    <h1>BookName</h1>
-    <div class="bookImgDiv">
-        <img id="bookImg" src="https://dhmckee.com/wp-content/uploads/2018/11/defbookcover-min.jpg">
+    <div class="App">
+        <nav class="nav-bar">
+            <a href="#" class="logo">Orio</a>
+            <ul class="nav-elemnts">
+                <li><a href="./../index.html">Home</a></li>
+                <li><a href="./../html/main.html">Books</a> </li>
+                <li><a href="./ShowBookInfo.html">My Shelf</a></li>
+                <li><a href="./contctus.html">Contact Us</a></li>
+            </ul>
+                <input type="text" name="BookSearch" id="searchbook" class="hide">
+            <ul class="operations">
+                <li>
+                    <img src="./../assets/magnifying-glass.svg" alt="search" class="search-button">
+                </li>
+                <li class="login cls-hv"> LOGIN </li>
+                <li class="signeup cls-hv"> SIGNE UP</li>
+            </ul>
+        </nav>
+
     </div>
-    <div class="bookInfo">
-        <p>
-     Here we have all the info about the book<br>
-     Author<br>
-     Publish date
-        </p>
-     
-    </div>
-  
-</body>
 </html>

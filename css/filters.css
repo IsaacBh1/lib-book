@@ -1,5 +1,5 @@
 .filters-cont {
-    padding: 2rem;
+    padding: 1em;
 }
 
 .filters{
@@ -16,6 +16,7 @@
     border: 2px solid #299162;
     font-family: sans-serif;
     cursor: pointer;
+    font-size: 16px;
 }
 
 .selected {
