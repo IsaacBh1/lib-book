@@ -11,6 +11,9 @@
     justify-content: center;
 }
  
+::selection{
+  background-color: rgb(38, 169, 169);
+}
 
 
 .book-item {

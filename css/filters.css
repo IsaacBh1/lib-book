@@ -8,6 +8,9 @@
     gap: 1rem;
 }
 
+::selection{
+    background-color: rgb(11, 47, 47);
+}
 .filters li {
     padding: 5px 10px;
     border-radius: 30px;

@@ -16,3 +16,7 @@
     height:25% ;
     width:33% ;
 }
+
+::selection{
+    background-color: rgb(11, 47, 47);
+}

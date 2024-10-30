@@ -40,6 +40,9 @@
     
 }
 
+::selection{
+    background-color: rgb(11, 47, 47);
+}
 .nav-elemnts li a {
     transition: 0.3s;
     color: white;

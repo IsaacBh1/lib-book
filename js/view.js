@@ -54,6 +54,15 @@ function createBookItem(title, description, starRating, bookImageUrl) {
     bookmarkImage.src = './../assets/bookmark-simple-unfill.svg';
     bookmarkImage.alt = 'save';
     bookmarkImage.className = 'save-bookMark';
+    
+    bookmarkImage.addEventListener('click', function () {
+        if (bookmarkImage.src.includes("bookmark-simple-unfill.svg")) {
+            bookmarkImage.src = "./../assets/bookmark-simple-fill.svg";
+        } else {
+            bookmarkImage.src = "./../assets/bookmark-simple-unfill.svg";
+        }
+    });
+    
     // bookmarkImage.click ;
     // i should hundle this click later  
     bookInfos.appendChild(bookDescription);
@@ -84,3 +93,17 @@ function LoadBooksToUI(){
 }
 
 LoadBooksToUI(); 
+
+
+
+
+// function printElementTree(element, indent = 0) {
+//     console.log(' '.repeat(indent) + element.tagName);
+
+//     Array.from(element.children).forEach(child => {
+//         printElementTree(child, indent + 2);
+//     });
+// }
+
+// // Start from the body or any root element you want
+// printElementTree(document.body);

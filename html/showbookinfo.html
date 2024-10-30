@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../css/showbookinformations.css">
+    <title>OrioApp</title>
+</head>
+<body>
+    <div class="book-page">
+        <nav class="nav-bar">
+            <img src="./../assets/arrow-left.svg" alt="exit" class="exit-img">
+        </nav>
+
+        <div class="bookinfos-body">
+            <!-- Book Image Section -->
+            <div class="book-image-container">
+                <img src="https://www.placartphoto.com/media/PlacArt/Book_Image/image/13847/scalex/720;st%C3%A9phane_duroy_unknown_(signed).jpg" 
+                     alt="image not found" class="book-image">
+            </div>
+
+            <!-- Book Details Section -->
+            <div class="book-infos">
+                <h1 class="book-title book-information">Book Title</h1>
+                <div class="book-author book-information">Author : John Doe</div>
+                <div class="book-id book-information">ISBN Number : 123456789</div>
+                <div class="book-country book-information">Country : France</div>
+                <div class="book-language book-information">Language : English</div>
+                <div class="book-pages book-information">Pages : 300</div>
+                <div class="year book-information">Year : 2023</div>
+
+                <!-- Actions Section -->
+                <div class="book-actions">
+                    <img src="./../assets/bookmark-simple-unfill.svg" 
+                         alt="Bookmark" class="bookmark-icon" onclick="toggleBookmark(this)">
+                    <button class="read-now">Read Now</button>
+                    <button class="reviews-btn">See Reviews</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleBookmark(icon) {
+            if (icon.src.includes('unfill')) {
+                icon.src = './../assets/bookmark-simple-fill.svg';
+            } else {
+                icon.src = './../assets/bookmark-simple-unfill.svg';
+            }
+        }
+
+        document.querySelector('.buy-now').addEventListener('click', function() {
+            alert('Redirecting to purchase page...');
+        });
+
+        document.querySelector('.reviews-btn').addEventListener('click', function() {
+            alert('Displaying reviews...');
+        });
+    </script>
+</body>
+</html>
